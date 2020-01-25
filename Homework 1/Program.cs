@@ -34,8 +34,18 @@ namespace Homework_1
                 gsaleprice = cogs * standmarkup;
             }
             double total;
-            double tax;
-            
+            double subtotal;
+            double tax=1.089;
+
+            subtotal = csaleprice * answer + gsaleprice * answer2;
+
+            total = subtotal * tax;
+
+            Console.WriteLine("\n---------------------------------------------\n");
+            Console.WriteLine("              RECEIPT         ");
+
+            Console.ReadKey();
         }
+
     }
 }
