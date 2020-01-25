@@ -10,8 +10,10 @@ namespace Homework_1
     {
         static void Main(string[] args)
         {
-            double cogs = 79.99;
-            double gears = 250.00;
+            const double cogs = 79.99;
+            const double gears = 250.00;
+            const double standmarkup = 1.15;
+            const double lowmarkup = 1.125;
             double csaleprice = 0;
             double gsaleprice = 0;
 
@@ -23,8 +25,17 @@ namespace Homework_1
 
             if(answer>=10 || answer2>=10 || answer+answer2>=16)
             {
-
+                csaleprice = cogs * lowmarkup;
+                gsaleprice = cogs * lowmarkup;
             }
+            else
+            {
+                csaleprice = cogs * standmarkup;
+                gsaleprice = cogs * standmarkup;
+            }
+            double total;
+            double tax;
+            
         }
     }
 }
