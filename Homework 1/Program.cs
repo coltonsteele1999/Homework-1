@@ -35,15 +35,22 @@ namespace Homework_1
             }
             double total;
             double subtotal;
-            double tax=1.089;
+            double tax=0.089;
+            double taxtotal;
+            double cextension;
+            double gextension;
 
-            subtotal = csaleprice * answer + gsaleprice * answer2;
+            cextension = csaleprice * answer;
+            gextension = gsaleprice * answer2;
+            subtotal = cextension + gextension;
 
-            total = subtotal * tax;
-
+            taxtotal = subtotal * tax;
+            total = subtotal + taxtotal;
+            
             Console.WriteLine("\n---------------------------------------------\n");
             Console.WriteLine("              RECEIPT         ");
-
+            Console.WriteLine(answer+" Cogs @  $"+csaleprice+"-------->$"+cextension);
+            Console.WriteLine(answer2 + " Gears @  $" + gsaleprice + "-------->$" + gextension);
             Console.ReadKey();
         }
 
