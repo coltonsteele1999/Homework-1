@@ -8,8 +8,7 @@ namespace Methods_1
 {
     class Program
     {
-        static void Main(string[] args)
-        {
+       
             static double LineValueForY()
             {
                 Console.WriteLine("What is the slope of your function?");
@@ -49,4 +48,4 @@ namespace Methods_1
                 Console.ReadKey();
             }
         }
-    } }
+    } 
