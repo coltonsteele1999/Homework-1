@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods-1", "Methods-1\Meth
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays-1", "Collections-1\Arrays-1.csproj", "{9952EFB3-B7F1-4298-83E6-1C8908218241}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays-2", "Arrays-2\Arrays-2.csproj", "{EA483EA4-7F55-4708-9464-8829B2B39729}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9952EFB3-B7F1-4298-83E6-1C8908218241}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9952EFB3-B7F1-4298-83E6-1C8908218241}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9952EFB3-B7F1-4298-83E6-1C8908218241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA483EA4-7F55-4708-9464-8829B2B39729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA483EA4-7F55-4708-9464-8829B2B39729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA483EA4-7F55-4708-9464-8829B2B39729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA483EA4-7F55-4708-9464-8829B2B39729}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
