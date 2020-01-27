@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Colton Steele
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,20 +12,26 @@ namespace Homework_1
     {
         static void Main(string[] args)
         {
+            //declaring constant variables
             const double cogs = 79.99;
             const double gears = 250.00;
             const double standmarkup = 1.15;
             const double lowmarkup = 1.125;
+
+            //declaring other variables
             double csaleprice = 0;
             double gsaleprice = 0;
             double discount;
 
+            //Getting number of cogs from associate
             Console.WriteLine("How many cogs are being purchased?");
             double answer = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("How many gears are being purchased?");
             double answer2 = Convert.ToDouble(Console.ReadLine());
 
+
+            //conditionals to figure markup
             if(answer>=10 || answer2>=10 || answer+answer2>=16)
             {
                 csaleprice = cogs * lowmarkup;
@@ -37,7 +45,7 @@ namespace Homework_1
                 discount = 0;
             }
 
-            
+            //delcaring some variables need
             double total;
             double subtotal;
             double tax=0.089;
@@ -45,6 +53,7 @@ namespace Homework_1
             double cextension;
             double gextension;
 
+            //calculations
             cextension = csaleprice * answer;
             gextension = gsaleprice * answer2;
             subtotal = cextension + gextension;
@@ -54,6 +63,7 @@ namespace Homework_1
             taxtotal = subtotal * tax;
             total = subtotal + taxtotal;
             
+            //creating a receipt
             Console.WriteLine("\n---------------------------------------------\n");
             Console.WriteLine("              RECEIPT         ");
             Console.WriteLine($"{answer} Cogs @ ${csaleprice:N2} ---------> ${cextension:N2}");
